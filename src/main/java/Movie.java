@@ -3,7 +3,7 @@ public class Movie {
     private int countOfRate = 0;
 
     public Integer averageRating() {
-        return 0;
+        return sumOfRate / countOfRate;
     }
 
     public void rate(int rate) {

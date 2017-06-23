@@ -9,4 +9,11 @@ public class MovieTest {
         Movie movie = new Movie();
         assertThat(movie.averageRating(), is(0));
     }
+
+    @Test
+    public void should_return_1_when_1_was_rated() {
+        Movie movie = new Movie();
+        movie.rate(1);
+        assertThat(movie.averageRating(), is(1));
+    }
 }
